@@ -1,10 +1,27 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background-color: aliceblue;
 }
-h2 {
-  color: blue;
+
+header, main, footer{
+  width: 80%;
+  margin-left: 10%; 
+  padding: 20px;
+  background-color: aqua; 
+  display: flex;
+  flex-direction: column;
 }
 
-p {
-  color:gray;
+article {
+  width: 80%;
+  padding: 20px;
+  background-color: brown;
+}
+
+section {
+  width : 30%;
 }
