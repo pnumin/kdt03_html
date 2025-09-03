@@ -1,27 +1,144 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
-body {
+header,main,footer {
+  width: 80%;
+  margin-left: 10%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+
   background-color: aliceblue;
 }
 
-header, main, footer{
-  width: 80%;
-  margin-left: 10%; 
-  padding: 20px;
-  background-color: aqua; 
-  display: flex;
-  flex-direction: column;
+header > h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-article {
-  width: 80%;
-  padding: 20px;
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100%; 
+  list-style: none;
+}
+
+.ultext > a {
+  display: inline-block;
+  width: 100px;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 10px;
+
+  text-decoration: none;
+  /* 밑줄없앰 */
+  text-align: center;
+
+  color: white;
+  background-color: blue;
+}
+
+
+.ulicon {
+  font-size: 30px;
+}
+
+/* 마우스가 놓이면 */
+.ultext > a:hover {
   background-color: brown;
 }
 
+
+article {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+article > h1 {
+  padding: 20px; 
+  font-weight: bold;
+}
+
+article > p {
+  padding: 20px;
+  font-family: "East Sea Dokdo", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  color: gray;
+}
+
 section {
-  width : 30%;
+  width: 90%;
+  border: 2px solid;
+  padding: 25px;
+  margin: 15px;
+
+  background-color: white;
+  border-radius: 20px;
+}
+
+section > div {
+  display: flex;
+  padding: 10px;
+}
+
+section h2 {
+  margin: 10px 10px 20px 10px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+section img {
+  border-radius: 100%;
+}
+section p {
+  margin-left: 20px;
+  padding: 30px;
+}
+
+span {
+  font-weight: bold;
+  display: inline-block;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width : 1024px) {
+  header,  main,  footer {
+    width: 100%;
+    margin-left: 0px;
+    /* padding: 20px; */
+    /* background-color: aqua;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: aliceblue;
+  }
+  footer {
+    background-color: black;
+    color: white;
+  }
+
 }

@@ -1,0 +1,91 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  /* background-color: aliceblue; */
+}
+
+header, main, footer{
+  width: 80%;
+  margin-left: 10%; 
+  padding: 20px;
+  /* background-color: aqua;  */
+  display: flex;
+  flex-direction: column;
+  
+  background-color: aliceblue;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+
+  width: 100%; 
+  border: 5px solid red;
+}
+
+li > i {
+  font-size: 25px;
+}
+
+article {
+  width: 80%;
+  padding: 20px;
+}
+
+article > p {
+  font-family: "East Sea Dokdo", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+section.s1 {
+  width : 500px;
+  border: 5px solid;
+  padding: 25px;
+  margin: 15px;
+}
+
+section.s2 {
+  width : 500px;
+  border: 5px solid;
+  padding: 25px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* li {
+  display: inline;
+} */
+
+a {
+  display:inline-block;
+  width: 100px; 
+  padding: 8px;
+  margin: 5px;
+  border-radius: 10px;
+  
+  text-decoration: none; /* 밑줄없앰 */
+  text-align: center;
+
+  color: white;
+  background-color: blue;
+}
+
+/* 마우스가 놓이면 */
+a:hover {
+  background-color: brown;
+}
+
+span {
+  font-weight: bold;
+  display: inline-block;
+}
