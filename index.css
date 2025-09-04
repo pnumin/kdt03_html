@@ -25,3 +25,58 @@ header {
   color: aliceblue;
   margin: 25px;
 }
+
+header > h1 {
+  text-align: center;
+}
+
+/* header > h1 > span { */
+header span {
+  color: bisque;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  padding: 0px 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: end;
+}
+
+footer li {
+  margin: 10px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+footer a {
+  display: inline-flex;
+  background-color: rgb(54, 54, 79);
+  color: aliceblue;
+
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+footer a:hover {
+  background-color: brown;
+}
+
+main li {
+  border-bottom: 1px solid rgb(196, 196, 196);
+
+  padding: 10px;
+  margin-top: 10px;
+}
+
+main li:hover {
+  background-color: aliceblue;
+}
