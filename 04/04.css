@@ -1,0 +1,11 @@
+.inputDiv {
+  margin-bottom: 40px;
+}
+
+input[type=text] {
+  padding: 8px;
+}
+
+input[readonly] {
+  background-color: beige;
+}
