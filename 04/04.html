@@ -16,17 +16,19 @@
     <h1><span>자바스크립트 문자열 예제</span></h1>
   </header>
   <main>
-    <!-- <form> -->
+    <form>
     <div class="inputDiv">
       <input type="text" name="txt1" id="txt1" placeholder="문자열을 입력하세요.">
       <input type="text" name="txt2" id="txt2" readonly>
     </div>
     <div class="btDiv">
-      <button onclick="check1()">회문확인</button>
-      <button onclick="">숫자합계</button>
-      <button onclick="">취소</button>
+      <input type="button" onclick="check1()" value="회문확인">
+      <input type="button" onclick="check2()" value="숫자합계">
+      <input type="button" onclick="check3()" value="취소"> 
     </div>
-    <!-- </form> -->
+    </form>
+    <div id="msg">
+    </div>
   </main>
   <footer>
     <ul>
