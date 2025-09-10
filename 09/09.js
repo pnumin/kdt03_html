@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //2-1. 처음 눌러졌는지 확인해서 랜덤수 생성 
     if (!flag) {
       n = Math.floor(Math.random() * 100) + 1 ; //1~100
-      init(true, 'block', '확인', 'what') ;v
+      init(true, 'block', '확인', 'what') ;
     }
 
     console.log(`n=${n}`)    
