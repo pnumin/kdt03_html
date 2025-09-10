@@ -1,0 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  padding: 20px;
+  border: 1px solid gainsboro;
+}
+
+form > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+  width: 100px;
+  height: 20px;
+
+  margin: 5px;
+  padding: 5px;
+}
