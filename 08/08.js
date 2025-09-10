@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       temp = (parseFloat(txt1.value) - 32) * (5/9) ;
     }
 
-    txt2.value = temp.toFixed(4);
+    txt2.value = parseFloat(temp.toFixed(4));
   });
 
 });
