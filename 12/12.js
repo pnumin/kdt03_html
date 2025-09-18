@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let idx ;
   let cnt = 0 ;
 
-
   //초기화 
   const init = () => {
     flag = false ;
@@ -29,9 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     arrnum.sort(() => Math.random() - 0.5) ;
     flag = true ;
     bt.innerHTML = '게임중 ...' ;
-    msg.innerHTML = '';
-    console.log(arrnum);
-    console.log(arrnum.indexOf(1))
+    msg.innerHTML = ''; 
   }) ;
 
   //보드 선택
