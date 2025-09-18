@@ -1,0 +1,27 @@
+/* 메인이미지 */
+#mainimg > img {
+  width: 250px;
+  height: 250px;
+
+  border-radius: 10px;
+  margin: 20px;
+}
+
+/* 썸네일 이미지 */
+#thumimg {
+  margin-top: 20px;
+}
+
+#thumimg > img {
+  width: 80px;
+  height: 80px;
+
+  margin: 4px;
+  box-sizing: border-box;
+  /* border: 4px solid white; */
+}
+
+#thumimg > img:hover {
+  cursor: pointer;
+  border: 4px solid blue;
+}
