@@ -1,0 +1,19 @@
+#boxMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#inDt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dt {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+}
