@@ -25,6 +25,29 @@ const getrankInten = (rankInten) => {
   return sprankInten ;
 }
 
+//포스터 가져오기
+const getPoster = (title) => {
+  let poster = document.querySelector("#poster") ;
+  console.log(title)
+  let tmdbapi = "" ;
+  let url = `https://api.themoviedb.org/3/search/movie?api_key=${tmdbapi}&query=${title}` ;
+
+  console.log(url)
+  fetch(url)
+    .then(resp => resp.json())
+    .then(data => {
+      if (data.results.length > 0) {
+        poster_path = data.results[0].poster_path ;
+        poster.innerHTML = `<img src="https://image.tmdb.org/t/p/w500${poster_path}" alt="${title}">` ;
+      }
+      else {
+        poster.innerHTML = `<img src="../img/noimage.jpeg" alt="이미지없음">` ;
+      }
+    })
+    .catch(err => console.log(err)) ;
+} 
+
+
 //박스 오피스 가져오기
 const getData = (gdt, box) => {
   let apikey = '' ;
@@ -35,7 +58,7 @@ const getData = (gdt, box) => {
     .then(resp => resp.json())
     .then(data => {
       let boxs = data.boxOfficeResult.dailyBoxOfficeList ;
-      let tags = boxs.map(item => `<li class="boxli">
+      let tags = boxs.map(item => `<li class="boxli" onclick="getPoster('${item.movieNm}')"}>
                                   <span class="boxrank">${item.rank}</span>
                                   ${getrankInten(item.rankInten)}
                                   <span>${item.movieNm.slice(0,20)}</span>

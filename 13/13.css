@@ -21,8 +21,30 @@
 }
 
 #content {
-  width:  80%;
+  width:  100%;
+  display: flex;
+  /* justify-content: start;
+  align-items: start; */
 } 
+
+#box {
+  width: 70%;
+}
+
+#poster {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px; 
+  /* border: 1px solid gainsboro; */
+}
+
+#poster > img {
+  width: 80%;
+  border: 1px solid gainsboro;
+}
 
 .boxli {
   padding: 3px;
@@ -66,3 +88,4 @@
 .spr > i, .spb > i {
   font-size: small;
 }
+
